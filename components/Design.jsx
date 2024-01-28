@@ -23,31 +23,30 @@ export default function Design() {
   return (
     <div className="">
       <div className="mx-auto px-3  items-center py-6">
-        <div className="flex flex-col">
-          <p className="text-alpha text-2xl md:text-[42px] md:leading-[54px] mb-4">
+        <div className="flex justify-between items-center">
+          <p className="text-alpha text-2xl md:text-[42px] md:leading-[54px]">
             Latest Design
           </p>
           <div className="flex gap-2 justify-end">
-        
             <button
               onClick={() => swiperRef?.current?.slidePrev()}
-              className="select-none rounded-full border-2 cursor-pointer border-[#292D32] transition-all duration-300 p-1"
+              className="select-none rounded-full border-2 cursor-pointer border-alpha transition-all duration-300 p-1"
             >
               <Image
                 src={"/icon/arrow (1).svg"}
-                width={20}
-                height={20}
+                width={22}
+                height={22}
                 alt="<"
               />
             </button>
             <button
               onClick={() => swiperRef?.current?.slideNext()}
-              className="select-none rounded-full border-2 cursor-pointer border-[#292D32] bg-[#292D32] p-1 transition-all duration-300"
+              className="select-none rounded-full border-2 cursor-pointer border-alpha bg-alpha p-1 transition-all duration-300"
             >
               <Image
                 src={"/icon/arrow (2).svg"}
-                width={20}
-                height={20}
+                width={22}
+                height={22}
                 alt="<"
               />
             </button>
@@ -68,9 +67,9 @@ export default function Design() {
               disableOnInteraction: false,
             }}
             breakpoints={{
-                0: {
-                    slidesPerView: 1,
-                  },
+              0: {
+                slidesPerView: 2,
+              },
               550: {
                 slidesPerView: 3,
               },
@@ -87,13 +86,13 @@ export default function Design() {
             {ReviewList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <div className="p-2 pt-10 ">
+                  <div className="p-1.5 pt-8">
                     <Image
                       src={`/assets/${item.pic}`}
-                      width={200}
-                      height={200}
+                      width={300}
+                      height={400}
                       alt="design"
-                      className="object-cover rounded-3xl"
+                      className="object-cover rounded-xl w-full"
                     />
                   </div>
                 </SwiperSlide>

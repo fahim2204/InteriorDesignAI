@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-20 px-6 bg-[#EADDD3] shadow border">
       <div className="mx-auto grid lg:grid-cols-2 md:gap-2">
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
+        <div className="md:items-start md:text-left mb-10 md:mb-0 ">
           <h1 className="mb-5 text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight">
             Redesign Interiors <br />
             with AI, in Less than 30 Seconds
@@ -31,7 +31,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          <div className="flex gap-5 mt-8 md:mt-12">
+          <div className="flex gap-0.5 md:gap-5 mt-8 md:mt-12">
             <Image
               src={"/assets/heroGroup.png"}
               height={150}

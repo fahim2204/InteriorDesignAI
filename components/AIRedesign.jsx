@@ -43,12 +43,12 @@ const AIRedesign = () => {
   ];
 
   return (
-    <div className="text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4">
+    <div className="text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-18 px-4">
       <div className="mb-8 md:mb-16">
-        <p className="text-alpha text-[16px] text-center font-bold leading-[33px] mb-2 font-['Inter']">
+        <p className="text-alpha uppercase text-[16px] text-center font-bold leading-[33px] mb-1 tracking-[0.25em] font-alpha">
           Redesign, Reimagine, Decorate and Furnish
         </p>
-        <h1 className="text-alpha text-3xl md:text-[56px] text-center md:leading-[96px] mb-4">
+        <h1 className="text-alpha text-2xl md:text-3xl lg:text-5xl lg:leading-[55px] text-center mb-1">
           Using Over 40+ AI Home Design Styles
         </h1>
       </div>
@@ -60,9 +60,9 @@ const AIRedesign = () => {
               width={100}
               height={100}
               alt={`Feature ${index + 1}`}
-              className="object-contain mx-auto rounded-xl mb-8"
+              className="object-contain mx-auto rounded-xl mb-1"
             />
-            <p className="text-[24px] font-semibold leading-[36px] mb-3 whitespace-pre-line">
+            <p className="md:text-lg font-semibold whitespace-pre-line">
               {feature.title}
             </p>
           </div>

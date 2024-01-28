@@ -29,7 +29,7 @@ const Info = () => {
         <p className="text-black text-center  text-xl md:text-4xl ">
           Trusted by nearly 5000+ paying customers
         </p>
-        <div className="flex flex-col md:flex-row gap-5 justify-between max-w-5xl mx-auto items-center mt-12 mb-8 md:mb-0">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-5 justify-between max-w-5xl mx-auto items-center mt-12 mb-8 md:mb-0">
           <Image
             src={"/icon/info-1.png"}
             height={200}
@@ -71,14 +71,15 @@ const Info = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center gap-3 p-12 rounded-2xl"
+              className="flex flex-col items-center gap-3 p-8 md:p-12 rounded-2xl"
               style={{ backgroundColor: item.bgColor }}
             >
               <div className="bg-[rgba(255,255,255,0.04)] rounded-lg">
                 <Image
+                className="object-contain w-10 md:w-16"
                   src={`/icon/${item.icon}`}
-                  height={40}
-                  width={40}
+                  height={100}
+                  width={100}
                   alt={item.title}
                 />
               </div>

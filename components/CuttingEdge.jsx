@@ -10,20 +10,20 @@ const CuttingEdge = () => {
   return (
     <div className=" text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 ">
       <div className="mb-8 md:mb-12">
-        <p className="text-alpha text-[16px] md:text-[20px] text-center font-semibold md:leading-[33px] mb-2 font-['Inter']">
+        <p className="md:text-xl text-center font-semibold md:leading-[33px] mb-2 tracking-[0.25em] uppercase font-alpha">
           EFFORTLESS AI HOME TRANSFORMATION
         </p>
-        <h1 className="text-alpha text-3xl md:text-[64px] text-center md:leading-[75px] mb-4">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl lg:leading-[55px] text-center mb-4">
           Meet Our Cutting-Edge AI Interior Tools
         </h1>
       </div>
       {/* Beautiful Design */}
       <div className="rounded-3xl mx-auto grid lg:grid-cols-2 gap-8 p-8 items-center bg-[#EADDD3] shadow border mb-8">
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
-          <h1 className="mb-5 text-2xl md:text-5xl font-medium leading-[60px]">
+        <div className="md:items-start md:text-left">
+          <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
             Beautiful Redesign and Stunning Transformations
           </h1>
-          <p className="mb-8 text-xl text-[#000000] leading-8 md:pr-12 ">
+          <p className="md:text-xl text-[#000000] md:leading-8 md:pr-12">
             Want to make your home look stunning inside and out? Our Beautiful
             Redesign interior ai feature can do just that. It helps you change
             up your place in different styles, making it look amazing. Redesign
@@ -50,11 +50,11 @@ const CuttingEdge = () => {
             src={Creativedesign}
           />
         </div>
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
-          <h1 className="mb-5 text-2xl md:text-5xl font-medium leading-[60px]">
+        <div className="md:items-start md:text-left">
+          <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
             Creative Redesign for Amazing Makeovers
           </h1>
-          <p className="mb-8 text-xl text-[#000000] leading-8 md:pr-12 ">
+          <p className="md:text-xl text-[#000000] md:leading-8 md:pr-12">
             Want to make your home look stunning inside and out? Our Beautiful
             Redesign interior ai feature can do just that. It helps you change
             up your place in different styles, making it look amazing. Redesign
@@ -65,11 +65,11 @@ const CuttingEdge = () => {
 
       {/* Furniture and decoration */}
       <div className="rounded-3xl mx-auto grid lg:grid-cols-2 gap-8 p-8 items-center bg-[#EADDD3] shadow border mb-8">
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
-          <h1 className="mb-5 text-2xl md:text-5xl font-medium leading-[60px]">
+        <div className="md:items-start md:text-left">
+          <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
             Fill The Room with Furniture and Decorations
           </h1>
-          <p className="mb-8 text-xl text-[#000000] leading-8 md:pr-12 ">
+          <p className="md:text-xl text-[#000000] md:leading-8 md:pr-12">
             Want to make your home look stunning inside and out? Our Beautiful
             Redesign interior ai feature can do just that. It helps you change
             up your place in different styles, making it look amazing. Redesign
@@ -96,11 +96,11 @@ const CuttingEdge = () => {
             src={Furnituredesign2}
           />
         </div>
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
-          <h1 className="mb-5 text-2xl md:text-5xl font-medium leading-[60px]">
+        <div className="md:items-start md:text-left">
+          <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
             Beautiful Redesign and Stunning Transformations
           </h1>
-          <p className="mb-8 text-xl text-[#000000] leading-8 md:pr-12 ">
+          <p className="md:text-xl text-[#000000] md:leading-8 md:pr-12">
             Want to make your home look stunning inside and out? Our Beautiful
             Redesign interior ai feature can do just that. It helps you change
             up your place in different styles, making it look amazing. Redesign
@@ -110,11 +110,11 @@ const CuttingEdge = () => {
       </div>
       {/* AI furniture*/}
       <div className="rounded-3xl mx-auto grid lg:grid-cols-2 gap-8 p-8 items-center bg-[#EADDD3] shadow border mb-8">
-        <div className="md:items-start md:text-left mb-16 md:mb-0 ">
+        <div className="md:items-start md:text-left">
           <h1 className="mb-5 text-3xl md:text-5xl font-medium leading-[60px]">
             AI Furniture Removal or Instant Room Declutter
           </h1>
-          <p className="mb-8 text-xl text-[#000000] leading-8 md:pr-12 ">
+          <p className="md:text-xl text-[#000000] md:leading-8 md:pr-12">
             With AI Furniture Removal, you can erase anything you want, like
             furniture or objects and make your room completely empty in no time.
             This helps you see your room empty and redesign it from zero.

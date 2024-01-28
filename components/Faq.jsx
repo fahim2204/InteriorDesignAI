@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -35,15 +36,15 @@ const Faq = () => {
     <div className="shadow border rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#FFB6AD] mt-8 md:mt-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-4 ">
         <div className="h-full">
-          <p className="text-[16px] font-semibold leading-[33px] mb-4 font-['Inter']">
+          <p className="text-[16px] font-semibold leading-[33px] mb-4 uppercase tracking-[0.25em] font-alpha">
             FAQS
           </p>
-          <h1 className="text-2xl md:text-[82px] md:leading-[96px] mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl max-w-96 lg:leading-[55px] mb-2">
             Any questions?Check out the FAQs
           </h1>
         </div>
         <div className="h-full">
-          <ul>
+          <ul className="mb-8">
             {FaqList.map((item, index) => {
               return (
                 <li key={index} className="border-b">
@@ -74,7 +75,16 @@ const Faq = () => {
               );
             })}
           </ul>
-          <Link href={'#'}>More FAQs</Link>
+          <Link className="text-2xl md:leading-[28px] px-4 underline flex items-center gap-2 font-alpha" href={'#'}>More FAQs
+            <Image
+              className="object-contain rotate-180"
+              src={"/icon/Arrow (1).svg"}
+              height={16}
+              width={16}
+              alt=""
+              loading="eager"
+            />
+          </Link>
         </div>
       </div>
     </div>

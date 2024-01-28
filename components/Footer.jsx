@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="text-alpha bg-[#EADDD3] mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 rounded-3xl">
+    <div className="text-alpha bg-[#EADDD3] mx-auto max-w-7xl pt-10 md:pt-16 lg:pt-20 px-4 rounded-3xl">
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16 p-8">
         {/* Logo Section */}
         <div className=" col-span-1">
-          <p className="text-alpha text-[20px] font-bold md:leading-[33px] mb-2 font-['Inter']">
+          <p className="text-alpha text-xl font-extrabold md:leading-[33px] mb-2 tracking-widest font-alpha uppercase">
             interior-design.ai
           </p>
-          <p className="text-alpha text-[18px] text-justify md:leading-[27px] mb-2 ">
+          <p className="text-alpha md:text-lg text-justify md:leading-[27px] mb-4">
             {" "}
             Upload your photo, choose a mode and pick from over 40 design
             styles. Reimagine Any Home Interior, Exterior, or Garden using AI.
@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="col-span-2">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
             <div>
-              <p className="text-lg font-semibold mb-4">Menu</p>
+              <p className="text-lg font-semibold mb-2">Menu</p>
               <ul className="flex flex-col mb-4">
                 <li>
                   <Link href="/">Home</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="text-lg font-semibold mb-4">Use Cases</p>
+              <p className="text-lg font-semibold mb-2">Use Cases</p>
               <ul className="flex flex-col mb-4">
                 <li>
                   <Link href="/interior-design-ai">Interior Design AI</Link>
@@ -67,7 +67,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="text-lg font-semibold mb-4">Legal</p>
+              <p className="text-lg font-semibold mb-2">Legal</p>
               <ul className="flex flex-col mb-4">
                 <li>
                   <Link href="/terms-of-service">Terms of Service</Link>
@@ -81,7 +81,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="text-lg font-semibold mb-4">Social</p>
+              <p className="text-lg font-semibold mb-2">Social</p>
               <ul className="flex flex-col mb-4">
                 <Link href="https://www.instagram.com/" target="_blank">
                   Instagram
@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-            <p className="text-alpha text-[18px] leading-[33px] mb-2">©2023.. All rights reserved.</p>
+          <p className="text-alpha text-center md:text-left text-lg leading-[33px]">©2023.. All rights reserved.</p>
         </div>
       </div>
     </div>

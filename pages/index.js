@@ -13,8 +13,8 @@ import InstantRedesign from "@/components/InstantRedesign";
 import Faq from "@/components/Faq";
 import Plan from "@/components/Plan";
 import AIMagic from "@/components/AIMagic";
-import Reviews from "@/components/reviews";
-import Bottomdesign from "@/components/Bottomdesign";
+import Reviews from "@/components/Reviews";
+import BottomDesign from "@/components/BottomDesign";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -37,7 +37,7 @@ export default function Home() {
       <Plan />
       <AIMagic />
       <Reviews />
-      <Bottomdesign />
+      <BottomDesign />
       <Footer />
     </main>
   );
