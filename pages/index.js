@@ -16,7 +16,7 @@ import AIMagic from "@/components/AIMagic";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import BottomDesign from "@/components/BottomDesign";
+import BottomDesign from "@/components/BottomDesignPart";
 
 export default function Home() {
   return (
