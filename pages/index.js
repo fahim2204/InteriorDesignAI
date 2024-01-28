@@ -14,9 +14,9 @@ import Faq from "@/components/Faq";
 import Plan from "@/components/Plan";
 import AIMagic from "@/components/AIMagic";
 import Reviews from "@/components/Reviews";
-import BottomDesign from "@/components/BottomDesign";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import BottomDesign from "@/components/BottomDesign";
 
 export default function Home() {
   return (
