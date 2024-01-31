@@ -1,38 +1,40 @@
 import Person from "../public/assets/person.png";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
 import { Pagination, Autoplay } from "swiper/modules";
 
 const Reviews = () => {
   const swiperRef = useRef();
+  const swiper2Ref = useRef();
 
   const ReviewList = [
     {
-      text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
+      text:
+        "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
       author: "Cristian Rama",
       business: "Real State",
-      img:"/assets/person.png",
+      img: "/assets/person.png",
     },
     {
-      text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ” ",
+      text:
+        "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ” ",
       author: "Cristian Rama",
       business: "Real State",
-      img:"/assets/person.png",
-      img:"/assets/person.png",
+      img: "/assets/person.png",
     },
     {
-      text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
+      text:
+        "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
       author: "Cristian Rama",
       business: "Real State",
-      img:"/assets/person.png",
+      img: "/assets/person.png",
     },
   ];
+
   return (
     <div className="text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -75,28 +77,24 @@ const Reviews = () => {
                   swiperRef.current = swiper;
                 }}
               >
-                {ReviewList.map((item, index) => {
-                  return (
-                    <SwiperSlide key={index}>
-                      {/* <div className="p-2 pt-10 "> */}
-                      <p className="text-alpha md:text-xl mb-4 font-alpha md:leading-[40px]">
-                        {item.text}
-                      </p>
-                      <p className="text-alpha text-[16px] md:text-2xl font-medium md:leading-[33px] uppercase tracking-widest font-alpha">
-                        {item.author}
-                      </p>
-                      <h1 className="text-alpha text-[16] md:text-xl md:leading-[30px] mb-5">
-                        {item.business}
-                      </h1>
-                      {/* </div> */}
-                    </SwiperSlide>
-                  );
-                })}
+                {ReviewList.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <p className="text-alpha md:text-xl mb-4 font-alpha md:leading-[40px]">
+                      {item.text}
+                    </p>
+                    <p className="text-alpha text-[16px] md:text-2xl font-medium md:leading-[33px] uppercase tracking-widest font-alpha">
+                      {item.author}
+                    </p>
+                    <h1 className="text-alpha text-[16] md:text-xl md:leading-[30px] mb-5">
+                      {item.business}
+                    </h1>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
             <div className="flex gap-2 justify-start">
               <button
-                onClick={() => swiperRef?.current?.slidePrev()}
+                onClick={() => { swiperRef?.current?.slidePrev(); swiper2Ref?.current?.slidePrev() }}
                 className="select-none rounded-full border-2 cursor-pointer border-alpha hover:bg-alpha group hover:translate-y-0.5 transition-all duration-300 p-1"
               >
                 <Image
@@ -108,7 +106,7 @@ const Reviews = () => {
                 />
               </button>
               <button
-                onClick={() => swiperRef?.current?.slideNext()}
+                onClick={() => { swiperRef?.current?.slideNext(); swiper2Ref?.current?.slideNext() }}
                 className="select-none rounded-full border-2 cursor-pointer border-alpha hover:bg-alpha group hover:translate-y-0.5 transition-all duration-300 p-1"
               >
                 <Image
@@ -123,11 +121,37 @@ const Reviews = () => {
           </div>
         </div>
         <div className="bg-white p-8 px-12 rounded-3xl h-full flex items-center">
-          <Image
-            className="object-cover px-2 rounded-3xl"
-            alt="hero"
-            src={Person}
-          />
+          <Swiper
+            grabCursor={true}
+            centeredSlides={false}
+            slidesPerView={1}
+            slidesPerGroupSkip={1}
+            loop={true}
+            rewind={true}
+            lazy={true}
+            navigation={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={false}
+            modules={[Pagination, Autoplay]}
+            onSwiper={(swiper) => {
+              swiper2Ref.current = swiper;
+            }}
+          >
+            {ReviewList.map((item, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <Image
+                  className="object-cover rounded-3xl mx-auto"
+                  alt="hero"
+                  src={item.img}
+                  height={450}
+                  width={320}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
