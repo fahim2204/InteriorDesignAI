@@ -14,31 +14,29 @@ import Faq from "@/components/Faq";
 import Plan from "@/components/Plan";
 import AIMagic from "@/components/AIMagic";
 import Reviews from "@/components/Reviews";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import BottomDesign from "@/components/BottomDesignPart";
-
+import MainLayout from "@/components/layouts/main";
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <Hero />
-      <Info />
-      <WhyChooseUs />
-      <HomeInterior />
-      <AIInterior />
-      <CuttingEdge />
-      <Service />
-      <HomeDesign />
-      <AIRedesign />
-      <Faq />
-      <AIExterior />
-      <InstantRedesign />
-      <Plan />
-      <AIMagic />
-      <Reviews />
-      <BottomDesign />
-      <Footer />
-    </main>
+    <>
+      <MainLayout>
+        <Hero />
+        <Info />
+        <WhyChooseUs />
+        <HomeInterior />
+        <AIInterior />
+        <CuttingEdge />
+        <Service />
+        <HomeDesign />
+        <AIRedesign />
+        <Faq />
+        <AIExterior />
+        <InstantRedesign />
+        <Plan />
+        <AIMagic />
+        <Reviews />
+        <BottomDesign />
+      </MainLayout>
+    </>
   );
 }

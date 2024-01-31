@@ -24,7 +24,7 @@ const Info = () => {
   ];
 
   return (
-    <div className="text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#F5F0EB] overflow-hidden">
+    <div className="text-alpha rounded-3xl mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#F5F0EB] overflow-hidden mt-8 md:mt-16">
       <div>
         <p className="text-black text-center  text-xl md:text-4xl ">
           Trusted by nearly 5000+ paying customers

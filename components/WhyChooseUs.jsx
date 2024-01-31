@@ -6,7 +6,7 @@ import Design from "@/components/Design";
 
 const WhyChooseUs = () => {
   return (
-    <div className="rounded-3xl text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#DFDFDF] shadow border">
+    <div className="rounded-3xl text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#DFDFDF] shadow border mt-8 md:mt-16">
       <div className="md:p-4">
         <p className="text-[16px] font-bold leading-[33px] text-center mb-4 uppercase tracking-[0.25em] font-alpha">
           WHY CHOOSE US
