@@ -9,12 +9,12 @@
 } 
 html {
   scroll-behavior: smooth;
-  font-family: "PP Telegraf"; 
+  font-family: "PP Telegraf", sans-serif;
 }
 
 body {
   font-family: "PP Telegraf"; 
-  background-color: #F5F0EB;
+  font-family: "PP Telegraf", sans-serif;
 }
 
 
