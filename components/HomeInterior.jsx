@@ -17,7 +17,7 @@ const Info = () => {
         <div>
           <div className="flex gap-4 items-center">
             <Image
-              src={"/icon/interior-icon(2).svg"}
+              src={"/icon/Interior-icon(2).svg"}
               width={50}
               height={50}
               alt=""
@@ -34,7 +34,7 @@ const Info = () => {
           </div>
           <div className="flex gap-4 items-center">
             <Image
-              src={"/icon/interior-icon(3).svg"}
+              src={"/icon/Interior-icon(3).svg"}
               width={50}
               height={50}
               alt=""
@@ -51,7 +51,7 @@ const Info = () => {
           </div>
           <div className="flex gap-4 items-center">
             <Image
-              src={"/icon/interior-icon(1).svg"}
+              src={"/icon/Interior-icon(1).svg"}
               width={50}
               height={50}
               alt=""
