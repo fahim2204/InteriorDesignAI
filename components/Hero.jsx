@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-3 mt-2 md:mt-4">
-            <Link href={"#"} className="text-sm md:text-base flex gap-2 bg-alpha text-white rounded-3xl px-4 md:px-6 py-2 md:py-3">
+            <Link href={"#"} className="text-sm md:text-base flex gap-2 bg-alpha text-white rounded-3xl px-4 md:px-6 py-2 md:py-3 hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300">
               Start Now
               <Image
                 className="object-contain"
