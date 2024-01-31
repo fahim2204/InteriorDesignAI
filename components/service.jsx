@@ -49,7 +49,7 @@ const Service = () => {
             <p className="text-lg md:text-xl text-center font-semibold mb-3 whitespace-pre-line max-w-48">
               {feature.title}
             </p>
-            <p className="md:text-lg">{feature.text}</p>
+            <p className="md:text-lg text-center">{feature.text}</p>
           </div>
         ))}
       </div>

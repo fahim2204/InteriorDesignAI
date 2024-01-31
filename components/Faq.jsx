@@ -78,7 +78,7 @@ const Faq = () => {
           <Link className="text-2xl md:leading-[28px] px-4 underline flex items-center gap-2 font-alpha" href={'#'}>More FAQs
             <Image
               className="object-contain rotate-180"
-              src={"/icon/Arrow (1).svg"}
+              src={"/icon/arrow(1).svg"}
               height={16}
               width={16}
               alt=""

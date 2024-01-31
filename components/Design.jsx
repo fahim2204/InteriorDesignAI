@@ -33,7 +33,7 @@ export default function Design() {
               className="select-none rounded-full border-2 cursor-pointer border-alpha transition-all duration-300 p-1"
             >
               <Image
-                src={"/icon/arrow (1).svg"}
+                src={"/icon/arrow(1).svg"}
                 width={22}
                 height={22}
                 alt="<"
@@ -44,7 +44,7 @@ export default function Design() {
               className="select-none rounded-full border-2 cursor-pointer border-alpha bg-alpha p-1 transition-all duration-300"
             >
               <Image
-                src={"/icon/arrow (2).svg"}
+                src={"/icon/arrow(2).svg"}
                 width={22}
                 height={22}
                 alt="<"
