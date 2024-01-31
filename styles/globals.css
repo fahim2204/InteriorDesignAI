@@ -5,7 +5,7 @@
 
 @font-face { 
   font-family: "PP Telegraf"; 
-  src: url("../public/font/pptelegraf-regular.woff2"); 
+  src: url("/font/pptelegraf-regular.woff2"); 
 } 
 html {
   scroll-behavior: smooth;
