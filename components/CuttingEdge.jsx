@@ -6,6 +6,10 @@ import Furnituredesign2 from "../public/assets/furniture-design-2.png";
 import Furnituredesign3 from "../public/assets/furniture-design-3.png";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 const CuttingEdge = () => {
   return (
     <div className=" text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 ">
@@ -32,11 +36,28 @@ const CuttingEdge = () => {
         </div>
         <div className="text-center">
           <div className="flex flex-col items-center">
-            <Image
-              className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-              alt="cuttingedge"
-              src={Cuttingimg}
-            />
+          <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-2.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-2.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -44,11 +65,28 @@ const CuttingEdge = () => {
       {/* Creative Design */}
       <div className="rounded-3xl mx-auto grid lg:grid-cols-2 gap-8 p-8 items-center bg-[#EADDD3] shadow border mb-8">
         <div className="flex flex-col items-center">
-          <Image
-            className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-            alt="cuttingedge"
-            src={Creativedesign}
-          />
+        <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
         </div>
         <div className="md:items-start md:text-left">
           <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
@@ -78,11 +116,28 @@ const CuttingEdge = () => {
         </div>
         <div className="text-center">
           <div className="flex flex-col items-center">
-            <Image
-              className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-              alt="Furnituredesign"
-              src={Furnituredesign}
-            />
+          <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-3.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-3.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -90,11 +145,28 @@ const CuttingEdge = () => {
       {/* Beautiful transformation*/}
       <div className="rounded-3xl mx-auto grid lg:grid-cols-2 gap-8 p-8 items-center bg-[#EADDD3] shadow border mb-8">
         <div className="flex flex-col items-center">
-          <Image
-            className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-            alt="Furnituredesign2"
-            src={Furnituredesign2}
-          />
+        <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
         </div>
         <div className="md:items-start md:text-left">
           <h1 className="mb-5 text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] font-medium">
@@ -122,11 +194,28 @@ const CuttingEdge = () => {
         </div>
         <div className="text-center">
           <div className="flex flex-col items-center">
-            <Image
-              className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-              alt="Furnituredesign3"
-              src={Furnituredesign3}
-            />
+          <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-3.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-3.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
           </div>
         </div>
       </div>

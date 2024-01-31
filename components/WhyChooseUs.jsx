@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
         <div className="flex justify-center gap-3 items-center flex-wrap mx-auto mt-12">
           <Link
             href={"#"}
-            className="items-center flex bg-alpha text-white text-base md:text-lg rounded-3xl px-4 md:px-6 py-2"
+            className="items-center flex bg-alpha text-white text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300"
           >
             <Image
               src={"/icon/interior-ai-1.svg"}
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
           </Link>
           <Link
             href={"#"}
-            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2"
+            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white hover-rounded-3xl hover:translate-y-0.5 transition-all duration-300"
           >
             <Image
               src={"/icon/interior-ai-2.svg"}
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
           </Link>
           <Link
             href={"#"}
-            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2"
+            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white hover-rounded-3xl hover:translate-y-0.5 transition-all duration-300"
           >
             <Image
               src={"/icon/interior-ai-3.svg"}
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
               width={36}
               alt=""
               loading="eager"
-              className="mr-2 object-contain h-8 md:h-12"
+              className="mr-2 object-contain h-8 md:h-12 "
             />
             Gardens
           </Link>

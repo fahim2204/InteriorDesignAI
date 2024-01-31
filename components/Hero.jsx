@@ -1,8 +1,10 @@
 import React from "react";
-import Heroimg from "../public/assets/heroimg.png";
 import Image from "next/image";
 import Link from "next/link";
-
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 const Hero = () => {
   return (
     <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-20 px-6 bg-[#EADDD3] shadow border">
@@ -18,7 +20,10 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-3 mt-2 md:mt-4">
-            <Link href={"#"} className="text-sm md:text-base flex gap-2 bg-alpha text-white rounded-3xl px-4 md:px-6 py-2 md:py-3 hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300">
+            <Link
+              href={"#"}
+              className="text-sm md:text-base flex gap-2 bg-alpha text-white rounded-3xl px-4 md:px-6 py-2 md:py-3 hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300"
+            >
               Start Now
               <Image
                 className="object-contain"
@@ -56,11 +61,28 @@ const Hero = () => {
         </div>
         <div className="text-center">
           <div className="flex flex-col items-center">
-            <Image
-              className="object-cover object-center items-center px-2 w-full rounded-2xl mb-4"
-              alt="hero"
-              src={Heroimg}
-            />
+            <div>
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src="/assets/before-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image one"
+                    className="object-contain"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src="/assets/after-section-1.webp"
+                    height={300}
+                    width={300}
+                    alt="Image two"
+                    className="object-contain"
+                  />
+                }
+              />
+            </div>
             <p className="mt-4 text-sm  text-[#3D4043]">
               Home Design AI, Exterior AI, and Landscaping AI.
               <br />

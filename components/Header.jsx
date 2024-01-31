@@ -16,21 +16,21 @@ const Header = () => {
     <div className="max-w-7xl mx-auto pt-5 pb-8 px-4 text-alpha">
       <div className="flex justify-between items-center">
         <Link href="/">
-          <div className="font-extrabold text-lg font-alpha tracking-[6px]"> INTERIOR-DESIGN.AI</div>
+          <div className="font-extrabold text-lg font-alpha tracking-[6px] hover:text-alpha/60 transition-all duration-300"> INTERIOR-DESIGN.AI</div>
         </Link>
         <div>
           <ul
             className="hidden lg:flex items-center space-x-4 m-auto">
-            <li className="py-3">
+            <li className="py-3 hover:text-alpha/60 transition-all duration-300">
               <Link href="/">Home</Link>
             </li>
-            <li className="py-3">
+            <li className="py-3 hover:text-alpha/60 transition-all duration-300">
               <Link href="/#features">Features</Link>
             </li>
-            <li className="py-3">
+            <li className="py-3 hover:text-alpha/60 transition-all duration-300">
               <Link href="/#api">API</Link>
             </li>
-            <li className="py-3">
+            <li className="py-3 hover:text-alpha/60 transition-all duration-300">
               <Link href="/#blog">Blogs</Link>
             </li>
             <div className="menu space-x-2 flex items-center">
@@ -40,7 +40,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href={'/'} className='flex items-center gap-1 border px-5 py-2.5 bg-black rounded-full text-white'>
+                <Link href={'/'} className='flex items-center gap-1 border px-5 py-2.5 bg-black rounded-full text-white hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300'>
                   <Image src={'/icon/Diamond.svg'} height={24} width={24} alt="+" loading="eager" />Upgrade To Pro
                 </Link>
               </li>
@@ -71,35 +71,35 @@ const Header = () => {
           </div>
           <div className="py-2 flex flex-col">
             <ul className="">
-              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm">
+              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm hover:text-alpha/60 transition-all duration-300">
                 <Link href="/">
                   Home
                 </Link>
               </li>
-              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm">
+              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm hover:text-alpha/60 transition-all duration-300">
                 <Link href="/#features">
                   Features
                 </Link>
               </li>
-              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm">
+              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm hover:text-alpha/60 transition-all duration-300">
                 <Link href="/#api">
                   API
                 </Link>
               </li>
-              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm">
+              <li onClick={() => setNav(false)} className="py-2 px-10 text-sm hover:text-alpha/60 transition-all duration-300">
                 <Link href="/#blog">
                   Blogs
                 </Link>
               </li>
               <li className=" py-3 px-8">
                 <Link href="/#delivery-login">
-                  <span className="px-10 py-2 bg-black rounded-full text-white">
+                  <span className="px-10 py-2 bg-black rounded-full text-white hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300">
                     Log in
                   </span>
                 </Link>
               </li>
               <li className="py-3 px-8 flex">
-                <Link href={'/'} className='flex items-center gap-1 border px-5 py-2.5 bg-black rounded-full text-white'>
+                <Link href={'/'} className='flex items-center gap-1 border px-5 py-2.5 bg-black rounded-full text-white hover:bg-alpha/90 hover:translate-y-0.5 transition-all duration-300'>
                   <Image src={'/icon/Diamond.svg'} height={24} width={24} alt="+" loading="eager" />Upgrade To Pro
                 </Link>
               </li>
