@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -15,28 +17,27 @@ import Plan from "@/components/Plan";
 import AIMagic from "@/components/AIMagic";
 import Reviews from "@/components/Reviews";
 import BottomDesign from "@/components/BottomDesignPart";
-import MainLayout from "@/components/layouts/main";
+
+
 export default function Home() {
   return (
     <>
-      <MainLayout>
-        <Hero />
-        <Info />
-        <WhyChooseUs />
-        <HomeInterior />
-        <AIInterior />
-        <CuttingEdge />
-        <Service />
-        <HomeDesign />
-        <AIRedesign />
-        <Faq />
-        <AIExterior />
-        <InstantRedesign />
-        <Plan />
-        <AIMagic />
-        <Reviews />
-        <BottomDesign />
-      </MainLayout>
+      <Hero />
+      <Info />
+      <WhyChooseUs />
+      <HomeInterior />
+      <AIInterior />
+      <CuttingEdge />
+      <Service />
+      <HomeDesign />
+      <AIRedesign />
+      <Faq />
+      <AIExterior />
+      <InstantRedesign />
+      <Plan />
+      <AIMagic />
+      <Reviews />
+      <BottomDesign />
     </>
   );
 }

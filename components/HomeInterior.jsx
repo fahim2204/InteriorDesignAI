@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Info = () => {
   return (
-    <div className="shadow border rounded-3xl text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#FFB6AD] mt-8 md:mt-16 ">
+    <div className="shadow border rounded-3xl text-alpha  mx-auto max-w-7xl py-10 md:py-16 lg:py-20 px-8 md:px-12 bg-[#FFB6AD] mt-8 md:mt-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center p-4">
         <div>
           <p className="text-alpha text-lg md:text-xl font-semibold leading-[33px] mb-4 uppercase tracking-[0.25em] font-alpha">

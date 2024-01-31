@@ -19,13 +19,13 @@ const AIexterior = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 h-full items-center">
         <div className="h-full flex items-center">
           <Image
-            className="object-contain px-2 rounded-3xl h-auto w-full"
+            className="object-contain rounded-3xl h-auto w-full"
             alt="hero"
             src={Exteriorimg}
           />
         </div>
           <div className="h-full bg-[#D1DDE6] p-7 px-10 rounded-3xl">
-            <p className="text-alpha text-[16px] font-bold leading-[33px] tracking-[0.25em] uppercase mb-1 font-alpha">
+            <p className="text-alpha text-xs md:text-base font-bold tracking-[0.25em] uppercase mb-1 font-alpha">
               USE AI TO REDESIGN & DECORATE
             </p>
             <h1 className="text-alpha text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] mb-2">

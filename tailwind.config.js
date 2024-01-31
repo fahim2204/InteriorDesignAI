@@ -1,5 +1,7 @@
 
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -13,15 +15,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primaryBlue": '#1175B8',
         "alpha": '#292D32'
       }
     },
     fontFamily: {
-      sen: ["Sen", "sans-serif"],
-      nunito: ["Nunito", "sans-serif"],
       alpha: ["Inter"],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.drag-none': {
+          '-webkit-user-drag': 'none',
+          '-khtml-user-drag': 'none',
+          '-moz-user-drag': 'none',
+          '-o-user-drag': 'none',
+          'user-drag': 'none'
+        }
+      });
+    })
+  ]
 }

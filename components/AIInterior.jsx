@@ -19,7 +19,7 @@ const AIInterior = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 h-full items-center">
         <div className="h-full flex items-center">
           <Image
-            className="object-contain px-2 rounded-3xl h-auto w-full"
+            className="object-contain rounded-3xl h-auto w-full"
             alt="hero"
             src={interiorimg}
           />

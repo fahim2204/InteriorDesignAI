@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -16,7 +18,7 @@ const Header = () => {
     <div className="max-w-7xl mx-auto pt-5 pb-8 px-4 text-alpha">
       <div className="flex justify-between items-center">
         <Link href="/">
-          <div className="font-extrabold text-lg font-alpha tracking-[6px] hover:text-alpha/60 transition-all duration-300"> INTERIOR-DESIGN.AI</div>
+          <div className="font-extrabold text-lg font-alpha tracking-[3px] md:tracking-[6px] hover:text-alpha/60 transition-all duration-300"> INTERIOR-DESIGN.AI</div>
         </Link>
         <div>
           <ul

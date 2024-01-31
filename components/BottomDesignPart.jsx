@@ -9,13 +9,13 @@ const BottomDesign = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         <div className="h-full flex items-center">
           <Image
-            className="object-contain px-2 rounded-3xl h-auto w-full"
+            className="object-contain rounded-3xl h-auto w-full"
             src={Bottomimage}
             alt="Bottomimage"
           />
         </div>
         <div className="bg-[#FFB6AD] rounded-3xl p-8">
-          <p className="text-alpha text-[16px] font-bold leading-[33px] tracking-[0.25em] uppercase mb-1 font-alpha">
+          <p className="text-alpha text-sm md:text-base font-bold tracking-[0.25em] uppercase mb-1 font-alpha">
             MADE FOR EVERYONE.
           </p>
           <h1 className="text-alpha text-2xl md:text-3xl lg:text-4xl lg:leading-[55px] mb-2 font-semibold">

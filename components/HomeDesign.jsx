@@ -13,10 +13,10 @@ const HomeDesign = () => {
     { href: "#", text: "Patio & Terraces AI" },
   ];
   return (
-    <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-7 md:py-10 px-4 bg-[#F8D0AA] shadow border">
-      <div className="mx-auto grid lg:grid-cols-2 gap-3 md:gap-6 p-4">
+    <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-7 md:py-10 px-8 md:px-20 bg-[#F8D0AA] shadow border">
+      <div className="mx-auto grid lg:grid-cols-2 gap-3 md:gap-6">
         <div className="">
-          <p className="text-alpha md:text-lg font-medium mb-3 tracking-[0.25em] uppercase font-alpha">
+          <p className="text-alpha text-xs md:text-base font-medium mb-3 tracking-[0.25em] uppercase font-alpha">
             DO IT IN SECONDS
           </p>
           <h1 className="mb-2 text-2xl md:text-4xl font-medium">

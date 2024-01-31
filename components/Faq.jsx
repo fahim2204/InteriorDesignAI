@@ -33,8 +33,8 @@ const Faq = () => {
 
 
   return (
-    <div className="shadow border rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4 bg-[#FFB6AD] mt-8 md:mt-16 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-4 ">
+    <div className="shadow border rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-8 md:px-12 bg-[#FFB6AD] mt-8 md:mt-16 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
         <div className="h-full">
           <p className="text-[16px] font-semibold leading-[33px] mb-4 uppercase tracking-[0.25em] font-alpha">
             FAQS
@@ -50,7 +50,7 @@ const Faq = () => {
                 <li key={index} className="border-b">
                   <details className="group">
                     <summary className="flex items-center justify-between gap-3 px-4 py-3 marker:content-none hover:cursor-pointer select-none">
-                      <span className="text-2xl md:leading-[28px]">
+                      <span className="text-base md:text-2xl md:leading-[28px]">
                         {item.ques}
                       </span>
                       <svg
@@ -75,7 +75,7 @@ const Faq = () => {
               );
             })}
           </ul>
-          <Link className="text-2xl md:leading-[28px] px-4 underline flex items-center gap-2 font-alpha" href={'#'}>More FAQs
+          <Link className="text=lg md:text-2xl md:leading-[28px] px-4 underline flex items-center gap-2 font-alpha" href={'#'}>More FAQs
             <Image
               className="object-contain rotate-180"
               src={"/icon/arrow(1).svg"}

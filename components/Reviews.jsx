@@ -17,21 +17,25 @@ const Reviews = () => {
       text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
       author: "Cristian Rama",
       business: "Real State",
+      img:"/assets/person.png",
     },
     {
       text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ” ",
       author: "Cristian Rama",
       business: "Real State",
+      img:"/assets/person.png",
+      img:"/assets/person.png",
     },
     {
       text: "“ I needed to replace my living room furniture so I generated a few design ideas with HomeDesigns.AI. I picked my favorite, sent it to the furniture maker and now I have it in real life. Awesome technology ”",
       author: "Cristian Rama",
       business: "Real State",
+      img:"/assets/person.png",
     },
   ];
   return (
     <div className="text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="h-full">
           <div className="bg-[#C3D3C8] p-8 px-12 rounded-3xl h-full flex flex-col pb-10">
             <p className="text-alpha text-[16px] font-bold tracking-[0.25em] uppercase mb-3 font-alpha">
@@ -93,24 +97,26 @@ const Reviews = () => {
             <div className="flex gap-2 justify-start">
               <button
                 onClick={() => swiperRef?.current?.slidePrev()}
-                className="select-none rounded-full border-2 cursor-pointer border-alpha transition-all duration-300 p-1"
+                className="select-none rounded-full border-2 cursor-pointer border-alpha hover:bg-alpha group hover:translate-y-0.5 transition-all duration-300 p-1"
               >
                 <Image
                   src={"/icon/arrow(1).svg"}
-                  width={25}
-                  height={25}
+                  width={22}
+                  height={22}
                   alt="<"
+                  className="group-hover:invert"
                 />
               </button>
               <button
                 onClick={() => swiperRef?.current?.slideNext()}
-                className="select-none rounded-full border-2 cursor-pointer border-alpha bg-alpha p-1 transition-all duration-300"
+                className="select-none rounded-full border-2 cursor-pointer border-alpha hover:bg-alpha group hover:translate-y-0.5 transition-all duration-300 p-1"
               >
                 <Image
-                  src={"/icon/arrow(2).svg"}
-                  width={25}
-                  height={25}
+                  src={"/icon/arrow(1).svg"}
+                  width={22}
+                  height={22}
                   alt="<"
+                  className="group-hover:invert rotate-180"
                 />
               </button>
             </div>

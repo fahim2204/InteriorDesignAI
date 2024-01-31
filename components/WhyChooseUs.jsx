@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,7 +37,7 @@ const WhyChooseUs = () => {
           </Link>
           <Link
             href={"#"}
-            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white hover-rounded-3xl hover:translate-y-0.5 transition-all duration-300"
+            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white group hover:translate-y-0.5 transition-all duration-300"
           >
             <Image
               src={"/icon/interior-ai-2.svg"}
@@ -43,13 +45,13 @@ const WhyChooseUs = () => {
               width={36}
               alt=""
               loading="eager"
-              className="mr-2 object-contain h-8 md:h-12"
+              className="mr-2 object-contain h-8 md:h-12 group-hover:invert"
             />
             Exteriors
           </Link>
           <Link
             href={"#"}
-            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white hover-rounded-3xl hover:translate-y-0.5 transition-all duration-300"
+            className="flex items-center text-base md:text-lg rounded-3xl px-4 md:px-6 py-2 hover:bg-alpha/90 hover:text-white group hover:translate-y-0.5 transition-all duration-300"
           >
             <Image
               src={"/icon/interior-ai-3.svg"}
@@ -57,7 +59,7 @@ const WhyChooseUs = () => {
               width={36}
               alt=""
               loading="eager"
-              className="mr-2 object-contain h-8 md:h-12 "
+              className="mr-2 object-contain h-8 md:h-12 group-hover:invert"
             />
             Gardens
           </Link>

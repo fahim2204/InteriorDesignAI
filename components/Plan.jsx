@@ -80,7 +80,7 @@ export default function Plan() {
               <div className="text-start font-bold leading-[33px] tracking-[0.25em] uppercase mb-3 font-alpha">
                 {item.title}
               </div>
-              <div className="text-3xl mb-2 lg:text-4xl font-medium flex items-center gap-1">
+              <div className="text-3xl mb-2 lg:text-5xl font-medium flex items-center gap-1">
                 ${item.price} <sub className="-mt-2"> /month</sub>
               </div>
               <div className=" mb-4 font-alpha">

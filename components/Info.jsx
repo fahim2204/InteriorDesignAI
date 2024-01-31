@@ -24,7 +24,7 @@ const Info = () => {
   ];
 
   return (
-    <div className="text-alpha rounded-3xl mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-6 bg-[#F5F0EB] overflow-hidden mt-8 md:mt-16">
+    <div className="text-alpha rounded-3xl mx-auto max-w-7xl py-10 md:py-16 lg:py-24 px-8 md:px-12 bg-[#F5F0EB] overflow-hidden mt-8 md:mt-16">
       <div>
         <p className="text-black text-center  text-xl md:text-4xl ">
           Trusted by nearly 5000+ paying customers
@@ -36,7 +36,7 @@ const Info = () => {
             width={350}
             alt=""
             loading="eager"
-            className="object-contain opacity-40 h-8 select-none"
+            className="object-contain opacity-40 h-8 select-none drag-none"
           />
           <Image
             src={"/icon/info-2.png"}
@@ -44,7 +44,7 @@ const Info = () => {
             width={350}
             alt=""
             loading="eager"
-            className="object-contain opacity-40 h-8 select-none"
+            className="object-contain opacity-40 h-8 select-none drag-none"
           />
           <Image
             src={"/icon/info-3.png"}
@@ -52,7 +52,7 @@ const Info = () => {
             width={350}
             alt=""
             loading="eager"
-            className="object-contain opacity-40 h-8 select-none"
+            className="object-contain opacity-40 h-8 select-none drag-none"
           />
           <Image
             src={"/icon/info-4.png"}
@@ -60,7 +60,7 @@ const Info = () => {
             width={350}
             alt=""
             loading="eager"
-            className="object-contain opacity-40 h-8 select-none"
+            className="object-contain opacity-40 h-8 select-none drag-none"
           />
         </div>
       </div>

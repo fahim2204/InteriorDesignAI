@@ -7,7 +7,7 @@ import {
 } from "react-compare-slider";
 const Hero = () => {
   return (
-    <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-20 px-6 bg-[#EADDD3] shadow border">
+    <div className="rounded-3xl text-alpha mx-auto max-w-7xl py-10 md:py-16 lg:py-20 px-8 md:px-12 bg-[#EADDD3] shadow border">
       <div className="mx-auto grid lg:grid-cols-2 md:gap-2">
         <div className="md:items-start md:text-left mb-10 md:mb-0 ">
           <h1 className="mb-5 text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight">
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
         <div className="text-center">
           <div className="flex flex-col items-center">
-            <div>
+            <div className="border-4 border-white rounded-3xl overflow-hidden">
               <ReactCompareSlider
                 itemOne={
                   <ReactCompareSliderImage
